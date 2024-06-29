@@ -1,0 +1,52 @@
+
+.post {
+    padding: 0 40px;
+
+    &__wrapper {
+        max-width: 1170px;
+        width: 100%;
+        margin: auto;
+
+        @media (max-width: $bp-md) {
+            margin-top: 50px;
+        }
+
+        &-header {
+            width: 100%;
+            padding: 80px 40px;
+            background-color: var(--second-gray);
+
+            @media (max-width: $bp-md) {
+                padding: 40px 20px;
+            }
+
+            &-title {
+                font-size: 40px;
+                font-family: var(--ff-primary);
+                font-weight: 700;
+                color: var(--c-title);
+
+                @media (max-width: $bp-md) {
+                    font-size: 35px;
+                }
+
+                @media (max-width: $bp-sm) {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &-content {
+            margin-top: 50px;
+            font-family: var(--ff-secondary);
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--c-black);
+            line-height: 32px;
+
+            @media (max-width: $bp-md) {
+                font-size: 18px;
+            }
+        }
+    }
+}
